@@ -11,8 +11,13 @@ enum FunWithEnum
 	public HaveSomeFun getMyObj() {
 		return myObj;
 	}
+	
 	public void setMyObj(HaveSomeFun myObj) {
 		this.myObj = myObj;
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("I love main method too");
 	}
 }
 public class HaveSomeFun 
@@ -20,10 +25,12 @@ public class HaveSomeFun
 	private String name;
 
 	HaveSomeFun()
-	{		 }
+	{}
 
 	HaveSomeFun(String name)
-	{	this.name = name;}
+	{	
+		this.name = name;
+	}
 	
 	public String getName() {
 		return name;
